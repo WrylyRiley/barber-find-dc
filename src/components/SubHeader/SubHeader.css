@@ -1,0 +1,19 @@
+h1 {
+  font-size: 5vw;
+  text-align: center;
+}
+
+p {
+  font-size: 4vw;
+  text-align: center;
+}
+
+.card-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-head {
+  width: 50vw;
+}
