@@ -12,6 +12,7 @@ import './ListView.css'
 
 // create component
 class ListView extends Component {
+  // You shouldn't have 2 componentDidMount methods.
   componentDidMount = () => {
     let path = this.props.location.pathname
     // initialize state
@@ -35,7 +36,8 @@ class ListView extends Component {
     })
     // axios call to get data from database
     axios
-      .get('http://localhost:9000')
+    // You should make calls to your deployed API
+      .get('https://barber-find-api.herokuapp.com/')
       .then((res, err) => {
         // set state variable to data received from call
         this.setState({

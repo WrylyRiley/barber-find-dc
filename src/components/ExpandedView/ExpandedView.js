@@ -39,6 +39,7 @@ export default class ExpandedView extends Component {
   }
 
   render = () => {
+    // You shouldn't leave keys on the front-end. Store keys on the back-end. Don't push keys to GitHub as well.
     let mapKey = 'AIzaSyAe_2Yi4B4N3WH9Wj3HA2XnLugNyhMLSpg'
     let search = `//www.google.com/maps/embed/v1/place?q=${this.props.barber.address.replace(
       / /g,

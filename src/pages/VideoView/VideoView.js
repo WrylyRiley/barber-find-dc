@@ -75,6 +75,7 @@ class VideoView extends Component {
             <Card fluid>
               <Card.Header className="header">Tools</Card.Header>
               <Card.Content>
+                {/* It's prefered to take the map methods out of the return statement, and add it to the render method */}
                 <div className="video-container">
                   {this.state.tools.map((item, idx) => {
                     return <Video video={item} key={idx} />
