@@ -19,6 +19,7 @@ class App extends Component {
     year: ''
   }
 
+  // I like this method. Simple, but smart.
   // get date when component mounts
   componentDidMount = () => {
     let year = new Date().getFullYear()
@@ -27,6 +28,7 @@ class App extends Component {
     })
   }
 
+  // You could have embeded the Navbar and the Footer component here, instead of embding them in each page.
   // render components
   render = () => {
     return (
